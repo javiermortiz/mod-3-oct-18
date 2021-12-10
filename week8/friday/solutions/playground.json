@@ -1,0 +1,5 @@
+{
+    "scenario": "Getting the homepage",
+    "method": "GET",
+    "url": "/"
+}

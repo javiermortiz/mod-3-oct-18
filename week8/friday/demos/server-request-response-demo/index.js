@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('input').value = '';
         
         const data = await res.json();
-        debugger;
         const ul = document.querySelector('ul');
         const li = document.createElement('li');
         const liText = document.createTextNode(`${data.tasks} - ${data.time}`);
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const res = await fetch(`/api/tasks/${taskId}`, {
                 method: 'DELETE'
             });
-            debugger
             if (res.ok) {
                 console.log(ev);
                 ev.target.remove();
