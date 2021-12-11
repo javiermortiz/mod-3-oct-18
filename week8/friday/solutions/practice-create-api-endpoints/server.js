@@ -125,7 +125,8 @@ const server = http.createServer((req, res) => {
         
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.write(JSON.stringify({ message: "Successfully deleted" }));
+        res.write(JSON.stringify({
+          message: `Successfully deleted dogId: ${dogId}` }));
         return res.end();
         //!!END
       }
