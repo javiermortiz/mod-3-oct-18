@@ -13,9 +13,12 @@ window.addEventListener("DOMContentLoaded", event => {
             // li.setAttribute("data-type", type.value);
             shoppingList.appendChild(li);
 
-            if (li.dataset.type === 'drinks') {
-                li.style.backgroundColor = 'red';
-            }
+            // if (li.dataset.type === 'drinks') {
+            //     li.style.backgroundColor = 'red';
+            // } else if (li.dataset.type === 'dairy') {
+            //     li.style.backgroundColor = 'yellow';
+            // }
+
             name.value = "";
             type.value = "drinks";
         })
